@@ -80,7 +80,7 @@ body {
 
 #motto {
     background-color: gray;
-    height: 60vh;
+    height: 70vh;
     display: flex;
     align-items: center;
     text-align: center;
@@ -242,6 +242,7 @@ body {
     background-color: white;
     color: black;
     padding: 20vh;
+    width: 90%;
 }
 
 #comments p {
@@ -290,5 +291,33 @@ body {
 
 #contact {
     background-color: lightgray;
-    height: 300px;
+    height: 30vh;
+    width: 50%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    -webkit-transform: translate(0, -20%);
+    transform: translate(0, -20%);
+}
+
+#contact p {
+    font-size: 2rem;
+}
+
+#contact span {
+    font-size: 1.5rem;
+}
+
+#contact .col-6 {
+    /* background-color: black; */
+    margin-top: 5vh;
+    font-size: 1.3rem;
+}
+
+#copyright {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 1.1rem;
 }
