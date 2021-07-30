@@ -1,0 +1,87 @@
+html,
+body {
+    width: 100%;
+    overflow-x: hidden;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    background-color: rgb(28, 29, 34);
+    color: white;
+}
+
+#topnav {
+    background-color: rgb(28, 29, 34);
+    height: 9vh;
+    color: white;
+    border: 3px solid rgb(153, 152, 152);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Roboto", sans-serif;
+}
+
+#topnav .col-3 {
+    font-size: 1.6rem;
+}
+
+#topnav .col {
+    margin: auto;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+}
+
+#topnav a {
+    -webkit-transition: color 0.4s ease-in-out;
+    transition: color 0.4s ease-in-out;
+}
+
+#topnav a:hover {
+    color: red;
+}
+
+#icons a {
+    font-size: 1.5rem;
+    margin: 0 0.6vw;
+    text-decoration: none;
+    color: rgb(187, 186, 186);
+    -webkit-transition: color 0.4s ease-in-out;
+    transition: color 0.4s ease-in-out;
+}
+
+#icons a:hover {
+    color: red;
+}
+
+.main {
+    width: 70%;
+    margin: auto;
+    padding-top: 20vh;
+}
+
+.intro {
+    width: 50%;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+
+.intro h1 {
+    line-height: 8vh;
+    margin-bottom: 10vh;
+}
+
+.intro h5 {
+    line-height: 3vh;
+}
+
+.events {
+    background-color: lightblue;
+    text-align: center;
+}
+
+.event {
+    height: 20vh;
+}
