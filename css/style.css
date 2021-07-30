@@ -280,11 +280,11 @@ body {
 }
 
 .comment p {
-    background-color: yellow;
+    /* background-color: yellow; */
 }
 
 .comment span {
-    background-color: lightblue;
+    /* background-color: lightblue; */
     font-style: italic;
 }
 
