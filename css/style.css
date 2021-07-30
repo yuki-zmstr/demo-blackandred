@@ -246,11 +246,15 @@ body {
 }
 
 #comments p {
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 
 #comments span {
     font-size: 1.5rem;
+}
+
+#comments h5 {
+    font-style: italic;
 }
 
 .commentboxes {
@@ -261,10 +265,6 @@ body {
     display: flex;
     align-items: center;
     text-align: center;
-}
-
-.comment {
-    /* background-color: lightblue; */
 }
 
 .line-card-comment {
@@ -280,33 +280,25 @@ body {
     font-size: 1.2rem;
 }
 
-.comment p {
-    /* background-color: yellow; */
-}
-
-.comment span {
-    /* background-color: lightblue; */
-    font-style: italic;
-}
-
 #contact {
-    background-color: lightgray;
+    background-color: rgb(226, 226, 226);
+    color: black;
     height: 30vh;
     width: 50%;
     margin: auto;
     display: flex;
     align-items: center;
-    text-align: center;
     -webkit-transform: translate(0, -20%);
     transform: translate(0, -20%);
 }
 
-#contact p {
-    font-size: 2rem;
+#contact img {
+    width: 80%;
+    margin-bottom: 5%;
 }
 
-#contact span {
-    font-size: 1.5rem;
+#contact .col-4 {
+    padding: 0 2vw;
 }
 
 #contact .col-6 {
