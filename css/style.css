@@ -308,6 +308,8 @@ body {
 }
 
 #copyright {
+    color: rgb(149, 149, 149);
+    font-family: Calibri, sans-serif;
     display: flex;
     align-items: center;
     text-align: center;
