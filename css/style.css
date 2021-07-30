@@ -10,32 +10,30 @@ body {
 }
 
 .carousel-item {
-    width: 100%;
-    height: 500px;
+    width: 100vw;
+    height: 75vh;
     overflow: hidden;
 }
 
 #topnav {
     background-color: rgb(28, 29, 34);
-    height: 75px;
+    height: 9vh;
     color: white;
     border: 3px solid rgb(153, 152, 152);
     display: flex;
     align-items: center;
     text-align: center;
     text-transform: uppercase;
-    font-size: 0.75rem;
     font-family: "Roboto", sans-serif;
 }
 
 #topnav .col-3 {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
 }
 
 #topnav .col {
-    display: flex;
-    align-items: center;
-    text-align: center;
+    margin: auto;
+    font-size: 0.8rem;
     letter-spacing: 2px;
 }
 
@@ -50,7 +48,7 @@ body {
 
 #icons a {
     font-size: 1.5rem;
-    margin: 0 15px;
+    margin: 0 0.6vw;
     text-decoration: none;
     color: rgb(187, 186, 186);
     -webkit-transition: color 0.4s ease-in-out;
@@ -64,40 +62,73 @@ body {
 #welcome {
     background-color: rgb(28, 29, 34);
     color: white;
-    height: 500px;
+    height: 90vh;
 }
 
 #welcome .col {
     margin: auto;
+    padding: 0 10vw 0 5vw;
 }
 
 #welcome p {
-    font-size: 2rem;
+    font-size: 3rem;
+}
+
+#welcome span {
+    font-size: 1.25rem;
 }
 
 #motto {
     background-color: gray;
-    height: 400px;
+    height: 60vh;
     display: flex;
     align-items: center;
     text-align: center;
     color: white;
 }
 
-#whoweare {
+#motto p {
+    font-size: 1.5vw;
+}
+
+#motto span {
+    font-size: 1vw;
+}
+
+#team {
     display: flex;
     align-items: center;
     text-align: center;
-    height: 100px;
-    font-size: 2rem;
+    height: 30vh;
+    font-size: 1vw;
+    margin-top: 15vh;
+    padding-bottom: 0;
+}
+
+.line-card-team {
+    width: 10vw;
+    height: 2px;
+    margin: auto;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    background-color: rgb(92, 141, 46);
+}
+
+#team p {
+    font-size: 4vw;
+}
+
+#team span {
+    color: rgb(158, 158, 158);
+    font-family: Tahoma, sans-serif;
 }
 
 #rowone {
-    /* background-color: lightcoral; */
-    height: 300px;
     display: flex;
     align-items: center;
     text-align: center;
+    padding: 0 20vw;
+    margin-bottom: 3vh;
 }
 
 #rowtwo {
@@ -106,85 +137,155 @@ body {
     display: flex;
     align-items: center;
     text-align: center;
+    padding: 0 20vw;
+    margin-bottom: 20vh;
+}
+
+#rowone .line-card-team,
+#rowtwo .line-card-team {
+    width: 4vw;
 }
 
 .person-box {
-    border: 2px solid rgb(98, 98, 98);
+    border: 2px solid rgb(77, 76, 76);
     border-radius: 5%;
     margin: auto;
-    width: 250px;
-    height: 280px;
+    width: 15vw;
+    height: fit-content;
     align-items: center;
     padding: 10px 0px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    letter-spacing: 1px;
 }
 
 .person-box img {
     margin-left: -50px;
+    /* margin-top: 10px; */
 }
 
 .circular--landscape {
     display: inline-block;
     position: relative;
-    width: 150px;
-    height: 150px;
+    width: 175px;
+    height: 175px;
     overflow: hidden;
     border-radius: 50%;
 }
 
-.line-card-team {
-    width: 60px;
-    height: 2px;
-    margin: auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    background-color: rgb(119, 52, 52);
-}
-
 .person-box p {
     font-size: 1.5rem;
+    margin-bottom: 0;
+}
+
+.person-box span {
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    color: rgb(57, 138, 2);
 }
 
 #quote {
-    height: 500px;
+    height: 100vh;
 }
 
-#quote .col-4 {
+#quote .col-3 {
     height: inherit;
-    background-color: rgb(85, 85, 85);
+    background-color: rgb(179, 179, 179);
 }
 
 #quote img {
     position: absolute;
     top: 50%;
     left: 50%;
-    -webkit-transform: translate(0%, -50%);
-    transform: translate(0%, -50%);
+    height: 80%;
+    width: 130%;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
     z-index: 1;
 }
 
-#quote .col-8 {
+#quote .col {
     background-color: rgb(179, 179, 179);
+    background-color: rgb(68, 0, 0);
     height: inherit;
-    padding-top: 150px;
-    padding-right: 300px;
-    text-align: right;
+    padding: 35vh 20vw 0 20vw;
+    text-align: end;
 }
 
 #quote p {
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-style: italic;
 }
 
+.line-card-quote {
+    width: 10vw;
+    height: 2px;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    background-color: rgb(255, 0, 0);
+    float: right;
+}
+
+#quote .clear {
+    font-family: "Lucida Sans Unicode", sans-serif;
+    font-size: 1.6rem;
+    clear: right;
+    margin-bottom: 1%;
+}
+
 #quote span {
+    font-family: "Lucida Sans Unicode", sans-serif;
     font-size: 1.2rem;
+    color: rgb(202, 202, 202);
 }
 
 #comments {
-    background-color: lightsalmon;
-    height: 300px;
+    background-color: white;
+    color: black;
+    padding: 20vh;
+}
+
+#comments p {
+    font-size: 2rem;
+}
+
+#comments span {
+    font-size: 1.5rem;
+}
+
+.commentboxes {
+    margin-top: 10vh;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    background-color: beige;
     display: flex;
     align-items: center;
     text-align: center;
+}
+
+.comment {
+    /* background-color: lightblue; */
+}
+
+.line-card-comment {
+    width: 10vw;
+    height: 2px;
+    background-color: rgb(255, 0, 0);
+    margin: auto;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+}
+
+.comment q {
+    font-size: 1.2rem;
+}
+
+.comment p {
+    background-color: yellow;
+}
+
+.comment span {
+    background-color: lightblue;
+    font-style: italic;
 }
 
 #contact {
