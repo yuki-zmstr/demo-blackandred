@@ -1,7 +1,10 @@
+html {
+    scroll-behavior: smooth;
+}
+
 html,
 body {
-    width: 100%;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     font-family: Georgia, "Times New Roman", Times, serif;
@@ -12,7 +15,6 @@ body {
 .carousel-item {
     width: 100vw;
     height: 75vh;
-    overflow: hidden;
 }
 
 #topnav {
@@ -25,6 +27,10 @@ body {
     text-align: center;
     text-transform: uppercase;
     font-family: "Roboto", sans-serif;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
 }
 
 #topnav .col-3 {
@@ -40,10 +46,12 @@ body {
 #topnav a {
     -webkit-transition: color 0.4s ease-in-out;
     transition: color 0.4s ease-in-out;
+    color: white;
 }
 
 #topnav a:hover {
     color: red;
+    text-decoration: none;
 }
 
 #icons a {
