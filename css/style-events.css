@@ -92,6 +92,7 @@ body {
 }
 
 .intro h1 {
+    width: 100%;
     line-height: 8vh;
 }
 
