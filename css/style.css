@@ -131,66 +131,6 @@ body {
     font-family: Tahoma, sans-serif;
 }
 
-#rowone {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    padding: 0 20vw;
-    margin-bottom: 3vh;
-}
-
-#rowtwo {
-    /* background-color: lightsalmon; */
-    height: 300px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    padding: 0 20vw;
-    margin-bottom: 20vh;
-}
-
-#rowone .line-card-team,
-#rowtwo .line-card-team {
-    width: 4vw;
-}
-
-.person-box {
-    border: 2px solid rgb(77, 76, 76);
-    border-radius: 5%;
-    margin: auto;
-    width: 15vw;
-    height: fit-content;
-    align-items: center;
-    padding: 10px 0px;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-    letter-spacing: 1px;
-}
-
-.person-box img {
-    margin-left: -50px;
-    /* margin-top: 10px; */
-}
-
-.circular--landscape {
-    display: inline-block;
-    position: relative;
-    width: 175px;
-    height: 175px;
-    overflow: hidden;
-    border-radius: 50%;
-}
-
-.person-box p {
-    font-size: 1.5rem;
-    margin-bottom: 0;
-}
-
-.person-box span {
-    font-size: 1.3rem;
-    text-transform: uppercase;
-    color: rgb(57, 138, 2);
-}
-
 #quote {
     height: 100vh;
 }
