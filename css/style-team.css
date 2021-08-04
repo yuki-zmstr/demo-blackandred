@@ -110,14 +110,23 @@ body {
     color: rgb(255, 255, 255, 0.5);
 }
 
+.heading {
+    margin: 20vh 0 5vh;
+    font-family: Tahoma, sans-serif;
+}
+
 .heading h2 {
     margin: auto;
 }
 
 .exco {
     width: 90%;
-    margin: 5% auto;
-    /* background-color: aliceblue; */
+    margin: 0 auto 5% auto;
+}
+
+.pd {
+    width: 80%;
+    margin: 0 auto 3% auto;
 }
 
 .person-box {
@@ -155,5 +164,14 @@ body {
 .person-box span {
     font-size: 1.3rem;
     text-transform: uppercase;
-    color: rgb(57, 138, 2);
+    color: rgb(63, 158, 0);
+}
+
+.line-card-team {
+    width: 5vw;
+    height: 2px;
+    margin: auto;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    background-color: rgb(255, 0, 0);
 }
