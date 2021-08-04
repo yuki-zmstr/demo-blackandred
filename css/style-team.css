@@ -110,9 +110,14 @@ body {
     color: rgb(255, 255, 255, 0.5);
 }
 
-#rowone .line-card-team,
-#rowtwo .line-card-team {
-    width: 4vw;
+.heading h1 {
+    margin: auto;
+}
+
+.exco {
+    width: 90%;
+    margin: 5% auto;
+    /* background-color: aliceblue; */
 }
 
 .person-box {
