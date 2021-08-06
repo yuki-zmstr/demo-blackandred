@@ -1,25 +1,56 @@
+/* ----------------------------------------------- */
+
+
+/* BASIC SETUP */
+
+
+/* ----------------------------------------------- */
+
 html {
     scroll-behavior: smooth;
 }
 
 html,
 body {
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     /* font-family: Georgia, "Times New Roman", Times, serif; */
+    position: relative;
     background-color: rgb(28, 29, 34);
-    color: white;
+    color: white
 }
+
+
+/* ----------------------------------------------- */
+
+
+/* CAROUSEL */
+
+
+/* ----------------------------------------------- */
 
 .carousel-item {
     width: 100vw;
     height: 75vh;
 }
 
+
+/* ----------------------------------------------- */
+
+
+/* TOP NAV */
+
+
+/* ----------------------------------------------- */
+
 #topnav {
+    width: 100%;
+    position: absolute;
+    margin: 0;
+    top: 75vh;
     background-color: rgb(28, 29, 34);
-    height: 9vh;
+    height: 8vh;
     color: white;
     border: 3px solid rgb(153, 152, 152);
     display: flex;
@@ -27,19 +58,16 @@ body {
     text-align: center;
     text-transform: uppercase;
     /* font-family: "Roboto", sans-serif; */
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
     z-index: 9999;
 }
 
 #topnav .col-3 {
-    font-size: 1.6rem;
+    font-size: 1.5vw
 }
 
 #topnav .col {
     margin: auto;
-    font-size: 0.8rem;
+    font-size: 0.7vw;
     letter-spacing: 2px;
 }
 
@@ -54,8 +82,12 @@ body {
     text-decoration: none;
 }
 
+#icons {
+    padding-right: 5vw;
+}
+
 #icons a {
-    font-size: 1.5rem;
+    font-size: 1.5vw;
     margin: 0 0.6vw;
     text-decoration: none;
     color: rgb(187, 186, 186);
@@ -66,6 +98,15 @@ body {
 #icons a:hover {
     color: red;
 }
+
+
+/* ----------------------------------------------- */
+
+
+/* WELCOME */
+
+
+/* ----------------------------------------------- */
 
 #welcome {
     background-color: rgb(28, 29, 34);
@@ -79,32 +120,65 @@ body {
 }
 
 #welcome p {
-    font-size: 3rem;
+    font-size: 2.5vw;
     font-family: 'STIX Two Text', serif;
 }
 
 #welcome span {
-    font-size: 1.25rem;
-    /* font-family: 'STIX Two Text', serif;
-    font-style: italic */
+    font-size: 1vw;
 }
+
+
+/* ----------------------------------------------- */
+
+
+/* MOTTO */
+
+
+/* ----------------------------------------------- */
 
 #motto {
     background-color: gray;
     height: 70vh;
-    display: flex;
-    align-items: center;
-    text-align: center;
     color: white;
 }
 
-#motto p {
+#motto .col {
+    height: inherit;
+    display: table;
+    text-align: center;
+    padding-top: 32.5vh;
+}
+
+#motto .header {
     font-size: 1.5vw;
 }
 
-#motto span {
+#motto .content {
     font-size: 1vw;
 }
+
+#motto .col::before {
+    content: "";
+    background-image: url("../img/placeholder.jpg");
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.2;
+    /* z-index: 999; */
+}
+
+
+/* ----------------------------------------------- */
+
+
+/* TEAM */
+
+
+/* ----------------------------------------------- */
 
 #team {
     display: flex;
