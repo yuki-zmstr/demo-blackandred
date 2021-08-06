@@ -277,6 +277,10 @@ body {
     text-align: center;
 }
 
+.comment img {
+    margin-bottom: 5%;
+}
+
 .line-card-comment {
     width: 10vw;
     height: 2px;
