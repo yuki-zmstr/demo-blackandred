@@ -142,7 +142,8 @@ body {
     padding-top: 100%;
     position: relative;
     margin: none;
-    border: 0.5px solid rgb(147, 180, 0)
+    border: 1px solid rgb(199, 136, 54);
+    box-sizing: border-box;
 }
 
 .square::after {
