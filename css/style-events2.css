@@ -5,27 +5,28 @@ html {
 html,
 body {
     width: 100%;
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    font-family: Georgia, "Times New Roman", Times, serif;
+    /* font-family: Georgia, "Times New Roman", Times, serif; */
     background-color: rgb(28, 29, 34);
     color: white;
 }
 
 #topnav {
+    width: 100%;
+    position: fixed;
+    margin: 0;
+    top: 0;
     background-color: rgb(28, 29, 34);
-    height: 9vh;
+    height: 8vh;
     color: white;
     border: 3px solid rgb(153, 152, 152);
     display: flex;
     align-items: center;
     text-align: center;
     text-transform: uppercase;
-    font-family: "Roboto", sans-serif;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
+    /* font-family: "Roboto", sans-serif; */
     z-index: 9999;
 }
 
@@ -143,11 +144,7 @@ body {
     margin: none
 }
 
-.shadowed {
-    position: relative;
-}
-
-.shadowed::after {
+.square::after {
     border-radius: 0 0;
     box-shadow: 0 0 25px rgb(109, 0, 0);
     content: '';
@@ -181,6 +178,5 @@ body {
 }
 
 .single span {
-    font-size: 0.75vw;
-    padding: none
+    font-size: 0.8vw;
 }
