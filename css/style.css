@@ -115,8 +115,9 @@ body {
     padding-left: 10%;
     line-height: 5vh;
     width: 100%;
-    z-index: -1;
+    z-index: 0;
     padding-top: 5vh;
+    cursor: pointer;
 }
 
 

@@ -46,7 +46,9 @@ $(document).ready(function() {
             // }
         });
     teams_list.hover(
-        function(){},
+        function(){
+            console.log('in teams list')
+        },
         function(){
             console.log("out function")
             
@@ -64,5 +66,22 @@ $(document).ready(function() {
             
         }
     )
+
+    // if (team_btn.is(":hover") === false) {
+    //     console.log('target')
+    //     if (teams_list.is(":hover") === false) {
+    //         teams_list.animate({
+    //             opacity: 0.0,
+    //         },300)
+
+    //         setTimeout(function (){
+    //             teams_list.css({
+    //                 display: "none",
+    //                 visibility: "visible",
+    //             })
+    //         },300
+    //         )
+    //     }
+    // }
 
 });
