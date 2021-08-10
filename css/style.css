@@ -109,13 +109,14 @@ body {
     display: none;
     list-style: none;
     position: absolute;
-    top: 5vh;
+    top: 0vh;
     /* background-color: lightslategray; */
     text-align: left;
     padding-left: 10%;
     line-height: 5vh;
     width: 100%;
     z-index: -1;
+    padding-top: 5vh;
 }
 
 

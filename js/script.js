@@ -29,7 +29,22 @@ $(document).ready(function() {
                 opacity: 1.0,
             },500)
         }, 
-        function(){});
+        function(){
+            // var hovering = teams_list(":hover")
+            // if (hovering == false) {
+            //     teams_list.animate({
+            //         opacity: 0.0,
+            //     },300)
+    
+            //     setTimeout(function (){
+            //         teams_list.css({
+            //             display: "none",
+            //             visibility: "visible",
+            //         })
+            //     },300
+            //     )
+            // }
+        });
     teams_list.hover(
         function(){},
         function(){
