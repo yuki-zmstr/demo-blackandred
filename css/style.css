@@ -18,7 +18,7 @@ body {
     /* font-family: Georgia, "Times New Roman", Times, serif; */
     position: relative;
     background-color: rgb(28, 29, 34);
-    color: white
+    color: white;
 }
 
 
@@ -50,7 +50,8 @@ body {
     margin: 0;
     top: 75vh;
     background-color: rgb(28, 29, 34);
-    height: 8vh;
+    height: fit-content;
+    padding: 1vh 0;
     color: white;
     border: 3px solid rgb(153, 152, 152);
     display: flex;
@@ -58,7 +59,7 @@ body {
     text-align: center;
     text-transform: uppercase;
     /* font-family: "Roboto", sans-serif; */
-    z-index: 9999;
+    z-index: 2;
 }
 
 #topnav .col-3 {
@@ -69,6 +70,7 @@ body {
     margin: auto;
     font-size: 0.7vw;
     letter-spacing: 2px;
+    /* background-color: lightgray; */
 }
 
 #topnav a {
@@ -97,6 +99,23 @@ body {
 
 #icons a:hover {
     color: red;
+}
+
+#teams {
+    position: relative;
+}
+
+#teams-list {
+    display: none;
+    list-style: none;
+    position: absolute;
+    top: 5vh;
+    /* background-color: lightslategray; */
+    text-align: left;
+    padding-left: 10%;
+    line-height: 5vh;
+    width: 100%;
+    z-index: -1;
 }
 
 
