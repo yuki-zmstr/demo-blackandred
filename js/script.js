@@ -67,6 +67,25 @@ $(document).ready(function() {
         }
     )
 
+    // welcome
+    const welcomePos = $("#welcome").offset().top;
+    const intro = $("#welcome p");
+    const desc = $("#welcome span") 
+    var wh = $(window).height();
+    $(window).scroll(function(){
+        var scroll = $(window).scrollTop();
+        if (scroll > welcomePos - wh / 3) {
+            intro.css({
+                opacity: 1.0
+            }).addClass('anim-typewriter')
+            setTimeout(function(){
+                desc.animate({
+                    opacity: 1.0
+                }, 1000)
+            }, 4000)
+        }
+    })
+
     // comments fade in
     var commentsPos = $("#comments").offset().top;
     var c1 = $(".c1")
