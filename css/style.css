@@ -23,7 +23,8 @@ body {
     color: white;
 }
 
-.sc .sc2 {
+.sc,
+.sc2 {
     visibility: hidden;
 }
 
