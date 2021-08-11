@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
 /* ----------------------------------------------- */
 
 
@@ -142,11 +144,49 @@ body {
 
 #welcome p {
     font-size: 2.5vw;
-    font-family: 'STIX Two Text', serif;
+    /* font-family: 'STIX Two Text', serif; */
 }
 
 #welcome span {
     font-size: 1vw;
+}
+
+.line-1 {
+    font-family: 'Anonymous Pro', monospace;
+    top: 50%;
+    width: 13em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255, 255, 255, .75);
+    /* letter-spacing: 2px; */
+    /* text-align: center; */
+    white-space: nowrap;
+    overflow: hidden;
+    /* transform: translateY(-50%); */
+}
+
+
+/* Animation */
+
+.anim-typewriter {
+    animation: typewriter 2.5s steps(44) 1s 1 normal both, blinkTextCursor 500ms steps(44) infinite normal;
+}
+
+@keyframes typewriter {
+    from {
+        width: 0;
+    }
+    to {
+        width: 13em
+    }
+}
+
+@keyframes blinkTextCursor {
+    from {
+        border-right-color: rgba(255, 255, 255, .75);
+    }
+    to {
+        border-right-color: transparent;
+    }
 }
 
 
@@ -370,6 +410,10 @@ body {
     display: flex;
     align-items: center;
     text-align: center;
+}
+
+.comment {
+    opacity: 0;
 }
 
 .comment img {

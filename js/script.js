@@ -1,7 +1,7 @@
 // fix top nav
 $(document).ready(function() {
 
-    // for top nav
+    // top nav fixed position
     var topnavPos = $("#topnav").offset().top;
     $(window).scroll(function() {
         var scroll = $(window).scrollTop();
@@ -14,7 +14,7 @@ $(document).ready(function() {
         }
     });
 
-    // for teams list
+    // teams list drop down
     var team_btn = $("#teams");
     var teams_list = $("#teams-list");
     team_btn.hover(
@@ -66,6 +66,33 @@ $(document).ready(function() {
             
         }
     )
+
+    // comments fade in
+    var commentsPos = $("#comments").offset().top;
+    var c1 = $(".c1")
+    var c2 = $(".c2")
+    var c3 = $(".c3")
+    $(window).scroll(function(){
+        var scroll = $(window).scrollTop();
+        if (scroll > commentsPos) {
+            console.log('triggered')
+            c1.animate({
+                opacity: 1.0
+            }, 800)
+            setTimeout(function() {
+                c2.animate({
+                    opacity: 1.0
+                },800)
+            },200)
+            setTimeout(function() {
+                c3.animate({
+                    opacity: 1.0
+                },800)
+            },400)
+        }
+
+    })
+
 
     // if (team_btn.is(":hover") === false) {
     //     console.log('target')
