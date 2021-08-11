@@ -67,6 +67,23 @@ $(document).ready(function() {
         }
     )
 
+    // fade in each block
+    $(window).scroll(function(){
+        var scroll = $(window).scrollTop();
+        $(".sc").each(function() {
+            var elemPos = $(this).offset().top;
+            if (scroll > elemPos - wh / 2) {
+                $(this).css({ opacity: 0.0, visibility: "visible" }).animate({ opacity: 1.0 }, 1500);
+            }
+        });
+        $(".sc2").each(function() {
+            var elemPos = $(this).offset().top;
+            if (scroll > elemPos - wh / 1.1) {
+                $(this).css({ opacity: 0.0, visibility: "visible" }).animate({ opacity: 1.0 }, 1000);
+            }
+        });
+    })
+
     // welcome
     const welcomePos = $("#welcome").offset().top;
     const intro = $("#welcome p");

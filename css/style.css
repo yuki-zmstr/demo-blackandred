@@ -23,6 +23,10 @@ body {
     color: white;
 }
 
+.sc .sc2 {
+    visibility: hidden;
+}
+
 
 /* ----------------------------------------------- */
 
@@ -157,7 +161,7 @@ body {
     font-family: 'Anonymous Pro', monospace;
     top: 50%;
     width: 13em;
-    margin-bottom: 4vh;
+    margin-bottom: 3vh;
     border-right: 2px solid rgba(255, 255, 255, .75);
     white-space: nowrap;
     overflow: hidden;
