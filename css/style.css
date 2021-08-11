@@ -174,7 +174,7 @@ body {
 /* Animation */
 
 .anim-typewriter {
-    animation: typewriter 2.5s steps(44) 1s 1 normal both, blinkTextCursor 500ms steps(44) infinite normal;
+    animation: typewriter 2.5s steps(44) 1s 1 normal both, blinkTextCursor 700ms steps(44) infinite normal;
 }
 
 @keyframes typewriter {
