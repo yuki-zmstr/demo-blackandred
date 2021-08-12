@@ -106,6 +106,29 @@ $(document).ready(function() {
         }
     })
 
+    // motto fade in
+    const mottoPos = $("#motto").offset().top;
+    const m1 = $(".m1")
+    const m2 = $(".m2")
+    var wh = $(window).height();
+    $(window).scroll(function(){
+        var scroll = $(window).scrollTop();
+        if (scroll > mottoPos - wh / 2) {
+            console.log('triggered')
+            m1.css({ opacity: 0.0, visibility: "visible" }).animate({
+                opacity: 1.0,
+                left: '0px'
+            }, 800)
+            setTimeout(function() {
+                m2.css({ opacity: 0.0, visibility: "visible" }).animate({
+                    opacity: 1.0,
+                    left: '0px'
+                },800)
+            },200)
+        }
+
+    })
+
     // comments fade in
     var commentsPos = $("#comments").offset().top;
     var c1 = $(".c1")
@@ -132,22 +155,5 @@ $(document).ready(function() {
 
     })
 
-
-    // if (team_btn.is(":hover") === false) {
-    //     console.log('target')
-    //     if (teams_list.is(":hover") === false) {
-    //         teams_list.animate({
-    //             opacity: 0.0,
-    //         },300)
-
-    //         setTimeout(function (){
-    //             teams_list.css({
-    //                 display: "none",
-    //                 visibility: "visible",
-    //             })
-    //         },300
-    //         )
-    //     }
-    // }
 
 });

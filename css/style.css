@@ -24,7 +24,9 @@ body {
 }
 
 .sc,
-.sc2 {
+.sc2,
+.m1,
+.m2 {
     visibility: hidden;
 }
 
@@ -207,18 +209,19 @@ body {
 /* ----------------------------------------------- */
 
 #motto {
-    background-color: gray;
+    /* background-color: gray; */
     height: 70vh;
     color: white;
-    left: -4vw;
-    position: relative
 }
 
 #motto .col {
     height: inherit;
     display: table;
     text-align: center;
-    padding-top: 32.5vh;
+    padding: 32.5vh 0;
+    /* padding-top: 32.5vh; */
+    left: -4vw;
+    position: relative
 }
 
 #motto .header {
@@ -238,8 +241,13 @@ body {
     right: 0px;
     bottom: 0px;
     left: 0px;
-    opacity: 0.2;
+    opacity: 0.4;
     /* z-index: 999; */
+}
+
+.background-tint {
+    background-color: rgba(255, 255, 255, 0.5);
+    background-blend-mode: multiply;
 }
 
 
