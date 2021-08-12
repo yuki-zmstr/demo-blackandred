@@ -208,6 +208,8 @@ body {
     background-color: gray;
     height: 70vh;
     color: white;
+    left: -5vw;
+    position: relative
 }
 
 #motto .col {
@@ -254,6 +256,8 @@ body {
     height: fit-content;
     font-size: 1vw;
     padding: 8% 0%;
+    left: -5vw;
+    position: relative
 }
 
 .line-card-team {
@@ -334,8 +338,19 @@ body {
     transform: scale(0.1, 1);
 }
 
+
+/* ----------------------------------------------- */
+
+
+/* QUOTE */
+
+
+/* ----------------------------------------------- */
+
 #quote {
     height: 100vh;
+    left: -5vw;
+    position: relative
 }
 
 #quote .col-3 {
@@ -389,6 +404,15 @@ body {
     color: rgb(202, 202, 202);
 }
 
+
+/* ----------------------------------------------- */
+
+
+/* COMMENTS */
+
+
+/* ----------------------------------------------- */
+
 #comments {
     background-color: white;
     color: black;
@@ -438,6 +462,15 @@ body {
 .comment q {
     font-size: 1.2rem;
 }
+
+
+/* ----------------------------------------------- */
+
+
+/* CONTACT */
+
+
+/* ----------------------------------------------- */
 
 #contact {
     background-color: rgb(226, 226, 226);
