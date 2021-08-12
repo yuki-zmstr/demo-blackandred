@@ -99,7 +99,8 @@ $(document).ready(function() {
             }).addClass('anim-typewriter')
             setTimeout(function(){
                 desc.animate({
-                    opacity: 1.0
+                    opacity: 1.0,
+                    left: '0px'
                 }, 1000)
             }, 4000)
         }
